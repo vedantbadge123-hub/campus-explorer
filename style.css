@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:"Poppins",Arial, sans-serif;
+  background: #f4f6fb;
+  color: #202124;
+}
+
+header {
+  background: #ffffff;
+  padding: 24px 16px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0 0 16px;
+}
+
+#search {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+#filters button {
+  padding: 8px 16px;
+  border: 1px solid #4285f4;
+  background: #ffffff;
+  color: #4285f4;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#filters button:hover {
+  background: #4285f4;
+  color: #ffffff;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 24px 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 0 0 12px;
+  color: #5f6368;
+  font-size: 14px;
+}
+
+.card span {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #e8f0fe;
+  color: #1a73e8;
+  border-radius: 12px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+.card {
+  cursor: pointer;
+}
+
+.details {
+  display: none;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.card.open .details {
+  display: block;
+}
+#cards > p {
+  text-align: center;
+  color: #5f6368;
+  grid-column: 1 / -1;
+}
+/* Google-colored strip at the top of the header */
+header {
+  background:
+    linear-gradient(to right, #4285f4 25%, #ea4335 25% 50%, #fbbc04 50% 75%, #34a853 75%)
+    top / 100% 6px no-repeat,
+    #ffffff;
+  padding-top: 30px;
+}
+
+/* Highlighted filter button */
+#filters button.active {
+  background: #4285f4;
+  color: #ffffff;
+}
+
+/* Result count */
+#count {
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+/* Colored top border per category */
+.card.technical { border-top: 4px solid #4285f4; }
+.card.cultural  { border-top: 4px solid #ea4335; }
+.card.sports    { border-top: 4px solid #fbbc04; }
+.card.others    { border-top: 4px solid #34a853; }
+
+/* Matching badge colors */
+.card.cultural span { background: #fce8e6; color: #d93025; }
+.card.sports span   { background: #fef7e0; color: #b06000; }
+.card.others span   { background: #e6f4ea; color: #188038; }
+
+/* Cards fade in when they appear */
+.card {
+  animation: fadeUp 0.4s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
