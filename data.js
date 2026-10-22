@@ -65,7 +65,7 @@ const items = [
   { name: "NSS", category: "others", mentor: "Prof. Suryawanshi Amol, Prof. Prajakta Musale, Prof. Vishnu Sonawane" },
   { name: "Diva - Women Empowerment Club", category: "others", mentor: "Prof. Ketki Shirbhavikar, Prof. Jayashree Tamkhade" },
   { name: "Personality Development Club", category: "others", mentor: "Prof. Amol Bhilare" },
-  { name: "Abhibriddhi Student Career and Counseling Club", category: "others", mentor: "Prof. Shital Sobale" },
+  { name: "Abhivriddhi Student Career and Counseling Club", category: "others", mentor: "Prof. Shital Sobale" },
   { name: "Leo VIT", category: "others", mentor: "Prof. Vikas Kolekar" },
   { name: "Unnat Bharat Abhiyan", category: "others", mentor: "Prof. Sharda Desai" },
   { name: "Antariksh", category: "others", mentor: "Prof. Shital Powar and Prof. Milind Patil" },
