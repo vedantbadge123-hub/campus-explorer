@@ -1,5 +1,5 @@
 # Campus Explorer
-
+![Campus Explorer screenshot](screenshot.png)
 A responsive website to explore the student clubs at VIT Pune.
 
 **Live demo:** https://vedantbadge123-hub.github.io/campus-explorer/
